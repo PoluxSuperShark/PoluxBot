@@ -54,16 +54,15 @@ bot.once('ready', async () => {
   }
 
   // Bot activity
-  bot.user.setPresence({
-    status: 'idle,' // Yellow moon on its profile
-  })
-  activities: [
-      {
-        name: "Serveur Minecraft en développement"
-      }
-  ]
-  
-})
+  // bot.user.setPresence({
+  //  status: 'idle,' // Yellow moon on its profile
+  // })
+  // activities: [
+  //  {
+  //    name: "Serveur Minecraft en développement"
+  //  }
+  // ]
+  //})
 
 // MessageCreate
 bot.on('messageCreate', async message => {
@@ -106,3 +105,4 @@ bot.on('interactionCreate', async interaction => {
 
 // Login and start with token
 bot.login(process.env.TOKEN)
+
